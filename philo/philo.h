@@ -49,6 +49,7 @@ typedef struct s_rules
 	int				must_eat_count;
 	long			start_time;
 	bool			simulation_end;
+	bool			threads_ready;
 
 	pthread_mutex_t	print_mutex;
 	pthread_mutex_t	end_mutex;
@@ -73,6 +74,7 @@ int		validate_arguments(char **argv, int argc);
 int		init_rules(t_rules *rules, char **argv, int argc);
 void	cleanup(t_rules *rules);
 int		init_philos(t_rules *rules);
+void 	wait_starting_gate(t_rules *rules);
 
 /* --------simulation------ */
 void	print_state(t_philo *philo, char *msg, bool is_death);

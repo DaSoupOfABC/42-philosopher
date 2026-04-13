@@ -87,6 +87,7 @@ void	*monitor_routine(void *arg)
 	t_rules	*rules;
 
 	rules = (t_rules *)arg;
+	wait_starting_gate(rules);
 	while (!simulation_finished(rules))
 	{
 		if (scan_philosophers(rules))
