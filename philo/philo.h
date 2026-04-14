@@ -80,4 +80,9 @@ void 	wait_starting_gate(t_rules *rules);
 void	print_state(t_philo *philo, char *msg, bool is_death);
 void	*philo_routine(void *arg);
 void	*monitor_routine(void *arg);
+void	think_routine(t_philo *philo);
+void	handle_one(t_philo *philo);
+void	eat(t_philo *philo);
+void	take_forks(t_philo *philo);
+void	put_forks(t_philo *philo);
 #endif

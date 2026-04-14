@@ -62,4 +62,3 @@ void	smart_sleep(long duration, t_rules *rules)
 		usleep(500);
 	}
 }
-

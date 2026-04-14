@@ -14,7 +14,8 @@ SRCS		= $(SRC_DIR)/main.c \
 			  $(SRC_DIR)/monitor.c \
 			  $(SRC_DIR)/philosopher_routine.c \
 			  $(SRC_DIR)/simulation.c \
-			  $(SRC_DIR)/thread_helpers.c
+			  $(SRC_DIR)/thread_helpers.c \
+			  $(SRC_DIR)/philosopher_routine_helper.c
 
 OBJS		= $(SRCS:.c=.o)
 
